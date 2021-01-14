@@ -4,7 +4,7 @@ const app = express()
 
 app.post('/', (req, res) => {
   
-    res.send("results")
+    res.send("results :"+req.params)
   console.log("call back")
 
 })
