@@ -8,7 +8,7 @@ app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 
 app.post('/', (req, res) => {
   
-    res.send("results :"+req.body.TransactionId)
+    res.send("results :"+req.params("TransactionId"))
   console.log("call back")
 
 })
