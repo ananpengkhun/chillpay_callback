@@ -2,9 +2,13 @@ const express = require('express');
 
 const app = express()
 
+var bodyParser = require('body-parser');
+app.use(bodyParser.json()); // support json encoded bodies
+app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
+
 app.post('/', (req, res) => {
   
-    res.send("results :"+req.params)
+    res.send("results :"+req.body.TransactionId)
   console.log("call back")
 
 })
