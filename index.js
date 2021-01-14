@@ -8,7 +8,9 @@ app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 
 app.post('/', (req, res) => {
   
-    res.send("results :"+req.body)
+  
+    res.json({requestBody: req.body}) 
+
   console.log("call back")
 
 })
