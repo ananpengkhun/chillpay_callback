@@ -64,6 +64,7 @@ app.post('/', (req, res) => {
 </html>
   
   `)
+  res.end()
   console.log("call back")
 
 })
