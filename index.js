@@ -20,7 +20,7 @@ app.post('/', (req, res) => {
 </head>
 
 <body>
-  ${req.body})}
+  data :${JSON.stringify(req.body)}
 </body>
 
 <script>
