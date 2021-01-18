@@ -9,28 +9,28 @@ app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 app.post('/', (req, res) => {
 
 
-  res.json({ requestBody: req.body })
-//   res.write(`
+  // res.json({ requestBody: req.body })
+  res.write(`
   
-//   <!DOCTYPE html>
-// <html>
+  <!DOCTYPE html>
+<html>
 
-// <head>
+<head>
 
-// </head>
+</head>
 
-// <body>
-//   ${res.json({ requestBody: req.body })}
-// </body>
+<body>
+  ${req.body})}
+</body>
 
-// <script>
-//   ChillPay.postMessage("ChillPay");
-// </script>
+<script>
+  ChillPay.postMessage("ChillPay");
+</script>
 
-// </html>
+</html>
   
-//   `)
-//   res.end()
+  `)
+  res.end()
   console.log("call back")
 
 })
