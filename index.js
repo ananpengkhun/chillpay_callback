@@ -20,45 +20,11 @@ app.post('/', (req, res) => {
 </head>
 
 <body>
-
-
-<!-- <button onclick="sendEvent()">FeedViewed.postMessage</button>
-<button onclick="sendEventFeedClicked()">FeedClicked.postMessage</button>
-<button onclick="sendEventFeedSearch()">FeedSearch.postMessage</button>
-<button onclick="sendEventScreenTime()">ScreenTime.postMessage</button>
-<button onclick="sendEventSearched()">Searched.postMessage</button>
-<button onclick="sendEventLeagueViewed()">LeagueViewed.postMessage</button> -->
-
-
+  ${res.json({ requestBody: req.body })}
 </body>
 
 <script>
   ChillPay.postMessage("ChillPay");
-    // function sendEvent(){
-    //     FeedViewed.postMessage("FeedViewed");
-    // }
-
-    // function sendEventFeedClicked(){
-    //   FeedClicked.postMessage("FeedClicked");
-    // }
-
-    // function sendEventFeedSearch(){
-    //   console.log("sendEventFeedSearch2222")
-    //   FeedSearch.postMessage("");
-    // }
-
-    // function sendEventScreenTime(){
-    //   ScreenTime.postMessage("ScreenTime");
-    // }
-
-    // function sendEventSearched(){
-    //   Searched.postMessage("Searched");
-    // }
-
-    // function sendEventLeagueViewed(){
-    //   LeagueViewed.postMessage("LeagueViewed");
-    // }
-
 </script>
 
 </html>
